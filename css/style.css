@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: 'Original Surfer', cursive;
+    background-image: url(https://wallpapersfull.com/wallpapers/2019/textura-de-madeira-wallpaper-11328.jpg)
+}
+
+.score-content{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 1.75rem 1rem 0;
+    border-radius: 10%;
+    width: 10rem;
+    height: 3rem;
+    background-color: black;
+}
+
+
+.score-content h3{
+    font-size: 1rem;
+    padding: 0 .75rem;
+    color: white;
+}
+
+.score-content h4{
+    font-size: 1rem;
+    text-align: left;
+    color: white;
+    padding-right: .5rem;
+}
+
+.container-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0 2rem;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas:
+        'green-color red-color'
+        'yellow-color blue-color';
+    grid-gap: 1rem;
+    border: 15px solid black;
+    background-color: black;
+    border-radius: 50%;
+    width: 32rem;
+    height: 32rem;
+}
+
+.blue {
+    grid-area: blue-color;
+    background-color: darkblue;
+    border-bottom-right-radius: 100%;
+    cursor: pointer;
+}
+
+.red {
+    grid-area: red-color;
+    background-color: darkred;
+    border-top-right-radius: 100%;
+    cursor: pointer;
+}
+
+.yellow {
+    grid-area: yellow-color;
+    background-color: goldenrod;
+    border-bottom-left-radius: 100%;
+    cursor: pointer;
+}
+
+.green {
+    grid-area: green-color;
+    background-color: darkgreen;
+    border-top-left-radius: 100%;
+    cursor: pointer;
+}
+
+.power-circle{
+    display: grid;
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: gray;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border: 10px solid black;
+}
+
+.power-circle h2{
+    color: lightgray;
+    margin: 1rem 0 0;
+    font-size: 1.75rem;
+    font-weight: normal;
+    -webkit-text-stroke: medium;
+    letter-spacing: .25rem;
+}
+
+.power-circle p{
+    color: lightgray;
+    margin: 1rem 1rem;
+    text-align: center;
+}
+
+.button-start{
+    cursor: pointer;
+    width: 5.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#turn{
+    background-color: black;
+    width: 4rem;
+    height: 1.75rem;
+    font-size: 1.25rem;
+    margin: .5rem 0 .25rem;
+    border-radius: 10%;
+    color: lime ;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.controls{
+    display: inline-block;
+}
+
+#on{
+    accent-color: lime;
+}
+
+#off {
+    accent-color: red;
+}
+
+span {
+    color: lightgray;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Game</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header Point's Dashboard -->
+    <header class="score-content">
+        <h3>Pontuação:</h3>
+        <h4 id="score"></h4>
+    </header>
+
+    <!-- Audio Sourcers -->
+    <audio id="sound1">
+        <source src="/assets/audio/genius-sound1.mp3"></source>
+    </audio>
+    <audio id="sound2">
+        <source src="/assets/audio/genius-sound2.mp3"></source>
+    </audio>
+    <audio id="sound3">
+        <source src="/assets/audio/genius-sound3.mp3"></source>
+    </audio>
+    <audio id="sound4">
+        <source src="/assets/audio/genius-sound4.mp3"></source>
+    </audio>
+
+    <!-- Game Board -->
+    <main class="container-game">
+        <div class="genius">
+            <div class="blue" ></div>
+            <div class="yellow" ></div>
+            <div class="red" ></div>
+            <div class="green" ></div>
+        </div>
+
+        <div class="power-circle">
+            <h2>GENIUS</h2>
+            <p>Clique em On e Start para iniciar o jogo!</p>
+            <div class="controls">
+                <span class="rd-on">On<input type="radio"  id="on" name="power" ></span>
+                <button class="button-start" id="start" disabled>Start</button>
+                <span class="rd-off"><input type="radio"  id="off" name="power" checked>Off</span>   
+            </div>
+            <div id="turn"></div>
+            <span>Level</span>
+        </div>
+    </main>
+
+    <script  src="/js/script.js"></script>
+</body>
+</html>
